@@ -22,8 +22,7 @@ public class HelloController {
 	public String helloMvc(@RequestParam(value = "name") String name, Model model) {
 		model.addAttribute("name", name);
 		return "hello-template";
-		// 해당하는 템플릿이 있지만 아래의 경우에는 없음
-	}
+	} 
 	
 	@GetMapping("hello-string")
 	@ResponseBody // http body부에 return 값을 직접 넣어줌
