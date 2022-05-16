@@ -10,12 +10,10 @@ import hello.hellospring.domain.Member;
 import hello.hellospring.repository.MemberRepository;
 import hello.hellospring.repository.MemoryMemberRepository;
 
-@Service
 public class MemberService {
 
 	private final MemberRepository memberRepository;
 	
-	@Autowired
 	public MemberService(MemberRepository memberRepository) { //MemberServiceTest에서 새로운 객체를 만들지 않고 사용 가능 => dependency injection
 		super();												
 		this.memberRepository = memberRepository;
